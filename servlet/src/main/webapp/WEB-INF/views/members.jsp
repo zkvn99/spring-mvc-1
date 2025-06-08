@@ -1,20 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Member List</title>
+  <title>Title</title>
 </head>
 <body>
-
-<table border="1">
+<a href="/index.html">메인</a> <table>
   <thead>
-  <tr>
-    <th>id</th>
-    <th>username</th>
-    <th>age</th>
-  </tr>
+  <th>id</th>
+  <th>username</th>
+  <th>age</th>
   </thead>
   <tbody>
   <c:forEach var="item" items="${members}">
@@ -26,6 +22,5 @@
   </c:forEach>
   </tbody>
 </table>
-
 </body>
 </html>
